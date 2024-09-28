@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 보기</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <h2>게시글 보기</h2>
+    <div class="container">
+        <h3>제목: 게시글 제목 1</h3>
+        <p>작성자: 작성자 이름</p>
+        <p>등록일: 2024-09-25</p>
+        <p>내용: 여기 게시글 내용이 표시됩니다.</p>
+        <a href="edit.html?id=1" class="btn">Edit</a>
+        <button class="btn" id= "DelBtn" type="Delete" onclick="location.href='index.html'">Delete</button>
+        <button class="btn" type="button" onclick="location.href='index.html'">List</button>
+    </div>
+    <script>
+        const button = document.getElementById("DelBtn");
+        button.onclick = function() {
+        alert("Do you want to delete this item?");
+        };
+    </script>
+</body>
+</html>
